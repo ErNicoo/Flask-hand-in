@@ -12,7 +12,7 @@
 {{ super() }}
     <body>
         <ul class="projectlist">
-            {% for placeholder, project in project.items() %}
+            {% for slug, project in pages %}
               <li>
                 {{ project }}
               </li>
