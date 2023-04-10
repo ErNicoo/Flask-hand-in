@@ -11,10 +11,10 @@
 
 {{ super() }}
     <body>
-        <ul class="projectlist">
-            {% for slug, project in pages %}
+        <ul>
+            {% for project in projects_pagination.items %}
               <li>
-                {{ project }}
+                <a href="/pages/{{ project.id }}">{{ project.name }}</a>
               </li>
             {% endfor %}
           </ul>
